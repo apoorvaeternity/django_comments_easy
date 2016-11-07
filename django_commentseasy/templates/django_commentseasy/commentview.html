@@ -1,0 +1,9 @@
+{% extends 'django_commentseasy/base.html' %}
+{% load django_comments_easy %}
+
+{% block content %}
+{% for comment in comments %}
+    <p>{{ comment.comment }}</p>
+    
+{% endfor %}
+{% endblock %}
