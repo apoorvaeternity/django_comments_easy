@@ -9,13 +9,13 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login
 
 
-
-
 class Testuser(generic.View):
     def get(self, request, *args, **kwargs):
         return render(request,'django_commentseasy/testuser.html')
     def post(self,request,*args,**kwargs):
-        user = User.objects.create_user(username=request.POST["user"],email=request.POST["email"],password=request.POST["pass"])
+        user = User.objects.create_user(username=request.POST["user"],
+                                        email=request.POST["email"],
+                                        password=request.POST["pass"])
         user.save()
         username = request.POST["user"]
         password = request.POST["pass"]
@@ -46,10 +46,23 @@ class CommentFormView(generic.edit.FormView):
     def post(self, request, *args, **kwargs):
         form = self.form_class(request.POST)
         new_comment = form.save(commit=False)
+        """
         new_comment.postid = request.POST['postid']
-        new_comment.author=request.user
+        new_comment.author = request.user
         new_comment.save()
+        """
+
+        if(request.POST["commenttype"]=="parent"):
+            new_comment.postid = request.POST['postid']
+            new_comment.author=request.user
+        elif (request.POST["commenttype"]=="child"):
+            new_comment.postid = CommentsEasy.objects.get(id=request.POST['commentid']).postid
+            new_comment.author = request.user
+            new_comment.parentcomment= CommentsEasy.objects.get(id=request.POST['commentid'])
+        new_comment.save()
+
         return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+
 
 
 class CommentOperations(generic.View):
@@ -75,6 +88,7 @@ class CommentOperations(generic.View):
                 ob.save()
                 likes_ob.save()
         return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+
 
     @login_required(login_url=settings.LOGIN_URL)
     def removecomment(request, commentid):

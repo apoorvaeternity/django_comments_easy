@@ -13,11 +13,26 @@ def render_comment_form(context, postid):
                             request=request)
 
 
+@register.simple_tag(name="render_reply_form", takes_context=True)
+def render_reply_form(context, commentid):
+    request = context["request"]
+    return render_to_string("django_commentseasy/replyform.html", {"commentid": commentid, "form": CommentForm},
+                            request=request)
+
+
+
 @register.simple_tag(name="render_comment_list", takes_context=True)
 def render_comment_list(context, postid):
-    com = {'comments': CommentsEasy.objects.filter(postid=postid).order_by("-id")}
+    com = {'comments': CommentsEasy.objects.filter(postid=postid,parentcomment=None).order_by("-id")}
     request = context["request"]
     return render_to_string("django_commentseasy/commentviewer.html", com, request=request)
+
+
+@register.simple_tag(name="render_reply_list", takes_context=True)
+def render_reply_list(context, commentid):
+    com = {'comments': CommentsEasy.objects.filter(parentcomment=commentid).order_by("id")}
+    request = context["request"]
+    return render_to_string("django_commentseasy/replyviewer.html", com, request=request)
 
 
 @register.simple_tag(name="render_comment_box", takes_context=True)
@@ -27,7 +42,12 @@ def render_comment_box(context,postid):
 
 @register.simple_tag(name="get_comment_count")
 def get_comment_count(postid):
-    count = CommentsEasy.objects.filter(postid=int(postid)).count()
+    count = CommentsEasy.objects.filter(postid=postid).count()
+    return count
+
+@register.simple_tag(name="get_reply_count")
+def get_reply_count(commentid):
+    count = CommentsEasy.objects.filter(parentcomment=commentid).count()
     return count
 
 """
