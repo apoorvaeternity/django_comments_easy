@@ -1,0 +1,9 @@
+{% extends 'django_commentseasy/base.html' %}
+{% load django_comments_easy %}
+
+
+{% block content %}
+{% if my_comment %}
+<a href="comment/remove/{{ comment }}"  title="Remove"><span class="glyphicon glyphicon-trash"></span></a>
+{% endif %}
+{% endblock %}

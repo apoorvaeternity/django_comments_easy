@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.humanize',
     'django_commentseasy',
     'bootstrap3',
 ]
@@ -123,8 +124,9 @@ USE_L10N = True
 
 USE_TZ = True
 
-ANONYMOUS_ALLOWED=True
 
+ANONYMOUS_ALLOWED=True
+LOGIN_URL="http://www.google.com"
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 

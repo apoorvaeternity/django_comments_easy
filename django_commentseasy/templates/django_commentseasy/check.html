@@ -1,10 +1,18 @@
+{% extends 'django_commentseasy/base.html' %}
 {% load django_comments_easy %}
 
+
 {% block content %}
-<div style="width:50%">{% render_comment_form 69%}</div>
-{% render_comment_form 89%}
-{% render_comment_form 99%}
-{% render_comment_list 66%}
-{% get_comment_count 66%}
-{% render_comment_form 66%}
+
+
+<div style="margin:0% 25% 0% 25%">
+<div class="well">
+Total Comments-{% get_comment_count 69%}
+{% render_comment_list 69%}
+{% render_comment_form 69%}
+</div>
+
+</div>
+
+
 {% endblock %}

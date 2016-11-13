@@ -1,9 +1,16 @@
 {% extends 'django_commentseasy/base.html' %}
 {% load django_comments_easy %}
-
+{% load humanize %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 {% block content %}
 {% for comment in comments %}
-    <p>{{ comment.comment }}</p>
+
+    <p>Username:{{ comment.author.username }}---{{ comment.comment }}</p>
+    <p>{{comment.timestamp|naturaltime }}</p>
+    <p>Likes={% get_comment_likes comment.id %}</p>
+    {% render_like_button  comment.id  %}
+    {% render_remove_button  comment.id  %}
+
     
 {% endfor %}
 {% endblock %}
