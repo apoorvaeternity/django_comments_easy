@@ -1,0 +1,16 @@
+{% extends 'django_commentseasy/base.html' %}
+{% load django_comments_easy %}
+
+
+{% block comment_content %}
+    <form style="display:inline-block" action="{% url 'django_commentseasy:remove_comment' %}" method="post">
+    {% csrf_token %}
+
+    {% if my_comment %}
+        <button type="submit" tiltle="Remove">
+   <span class="glyphicon glyphicon-trash"></span>
+</button>
+<input type="hidden" value={{ comment }} name="comment_id">
+    {% endif %}
+</form>
+{% endblock %}

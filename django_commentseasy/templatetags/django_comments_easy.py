@@ -1,96 +1,92 @@
 from django import template
 from django.template.loader import render_to_string
-from ..forms import *
-from ..models import CommentsEasy
+from ..forms import CommentForm
+from ..models import Comments, Likes
+
 
 register = template.Library()
 
 
+@register.simple_tag(name="bootstrap_files")
+def bootstrap_files():
+    return render_to_string("django_commentseasy/bootstrap_files.html")
+
+
 @register.simple_tag(name="render_comment_form", takes_context=True)
-def render_comment_form(context, postid):
+def render_comment_form(context, post_id):
     request = context["request"]
-    return render_to_string("django_commentseasy/commentform.html", {"postid": postid, "form": CommentForm},
+    return render_to_string("django_commentseasy/comment_form.html", {"post_id": post_id, "form": CommentForm},
                             request=request)
 
 
 @register.simple_tag(name="render_reply_form", takes_context=True)
-def render_reply_form(context, commentid):
+def render_reply_form(context, comment_id):
     request = context["request"]
-    return render_to_string("django_commentseasy/replyform.html", {"commentid": commentid, "form": CommentForm},
+    return render_to_string("django_commentseasy/reply_form.html", {"comment_id": comment_id, "form": CommentForm},
                             request=request)
-
 
 
 @register.simple_tag(name="render_comment_list", takes_context=True)
-def render_comment_list(context, postid):
-    com = {'comments': CommentsEasy.objects.filter(postid=postid,parentcomment=None).order_by("-id")}
+def render_comment_list(context, post_id):
+    comments = {'comments': Comments.objects.filter(post_id=post_id, parent_comment=None).order_by("-id")}
     request = context["request"]
-    return render_to_string("django_commentseasy/commentviewer.html", com, request=request)
+    return render_to_string("django_commentseasy/comment_viewer.html", comments, request=request)
 
 
 @register.simple_tag(name="render_reply_list", takes_context=True)
-def render_reply_list(context, commentid):
-    com = {'comments': CommentsEasy.objects.filter(parentcomment=commentid).order_by("id")}
+def render_reply_list(context, comment_id):
+    comments = {'comments': Comments.objects.filter(parent_comment=comment_id).order_by("id")}
     request = context["request"]
-    return render_to_string("django_commentseasy/replyviewer.html", com, request=request)
+    return render_to_string("django_commentseasy/reply_viewer.html", comments, request=request)
 
 
 @register.simple_tag(name="render_comment_box", takes_context=True)
-def render_comment_box(context,postid):
+def render_comment_box(context, post_id):
     request = context["request"]
-    return render_to_string("django_commentseasy/commentbox.html", postid, request=request)
+    return render_to_string("django_commentseasy/comment_box.html", post_id, request=request)
+
 
 @register.simple_tag(name="get_comment_count")
-def get_comment_count(postid):
-    count = CommentsEasy.objects.filter(postid=postid).count()
+def get_comment_count(post_id):
+    count = Comments.objects.filter(post_id=post_id).count()
     return count
+
 
 @register.simple_tag(name="get_reply_count")
-def get_reply_count(commentid):
-    count = CommentsEasy.objects.filter(parentcomment=commentid).count()
+def get_reply_count(comment_id):
+    count = Comments.objects.filter(parent_comment=comment_id).count()
     return count
 
-"""
-@register.simple_tag(name="get_comment_upvotes")
-def get_comment_upvotes(commentid):
-    upvotes = CommentsEasy.objects.get(pk=commentid).upvotes
-    return upvotes
 
-
-@register.simple_tag(name="get_comment_downvotes")
-def get_comment_downvotes(commentid):
-    downvotes = CommentsEasy.objects.get(pk=commentid).downvotes
-    return downvotes
-"""
 @register.simple_tag(name="get_comment_likes")
-def get_comment_likes(commentid):
-    total_likes = CommentsEasy.objects.get(pk=commentid).total_likes
+def get_comment_likes(comment_id):
+    total_likes = Comments.objects.get(pk=comment_id).total_likes
     return total_likes
 
 
-@register.simple_tag(name="render_like_button",takes_context=True)
-def render_like_button(context,comment_id):
+@register.simple_tag(name="render_like_button", takes_context=True)
+def render_like_button(context, comment_id):
     request = context["request"]
-    state=0
-    if(Likes.objects.filter(comment=comment_id,user=request.user).exists()==False):
-        state=0
-    elif Likes.objects.get(comment=comment_id,user=request.user).liked==0:
-        state=0
+    if not request.user.is_authenticated():
+        state = 0
+    elif Likes.objects.filter(comment=comment_id, user=request.user).exists() is False:
+        state = 0
+    elif Likes.objects.get(comment=comment_id, user=request.user).liked == 0:
+        state = 0
     else:
-        state=1
-    return render_to_string("django_commentseasy/likebutton.html", {"state": state,"comment":comment_id},
-                            request=request)
-
-@register.simple_tag(name="render_remove_button",takes_context=True)
-def render_remove_button(context,comment_id):
-    request = context["request"]
-    my_comment=False
-    if CommentsEasy.objects.filter(id=comment_id,author=request.user).exists():
-        my_comment=True
-    else:
-        my_comment=False
-    return render_to_string("django_commentseasy/removebutton.html", {"my_comment": my_comment, "comment": comment_id},
+        state = 1
+    return render_to_string("django_commentseasy/like_button.html", {"state": state, "comment": comment_id},
                             request=request)
 
 
-
+@register.simple_tag(name="render_remove_button", takes_context=True)
+def render_remove_button(context, comment_id):
+    request = context["request"]
+    if not request.user.is_authenticated():
+        my_comment = False
+    elif Comments.objects.filter(id=comment_id, author=request.user).exists():
+        my_comment = True
+    else:
+        my_comment = False
+    return render_to_string("django_commentseasy/remove_button.html", {"my_comment": my_comment, "comment": comment_id},
+                            request=request)

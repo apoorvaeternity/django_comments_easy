@@ -2,10 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ef5d64d-d9fc-42a9-b7f1-26bfb08876b2" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_commentseasy/migrations/0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_commentseasy/migrations/0002_auto_20161104_2045.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_commentseasy/migrations/0003_auto_20161104_2047.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_commentseasy/migrations/0004_auto_20161104_2216.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_commentseasy/migrations/0005_auto_20161104_2217.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_commentseasy/migrations/0006_auto_20161109_2205.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_commentseasy/migrations/0007_auto_20161109_2237.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_commentseasy/migrations/0008_auto_20161110_2237.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_commentseasy/migrations/0009_auto_20161110_2239.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_commentseasy/migrations/0010_auto_20161110_2239.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_commentseasy/migrations/0011_votes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_commentseasy/migrations/0012_auto_20161111_1759.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_commentseasy/migrations/0013_auto_20161111_1802.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_commentseasy/migrations/0014_auto_20161111_1807.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_commentseasy/migrations/0015_auto_20161111_1808.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_commentseasy/migrations/0016_auto_20161111_1936.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_commentseasy/migrations/0017_auto_20161111_2132.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_commentseasy/migrations/0018_auto_20161114_0256.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_commentseasy/migrations/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/commentbox.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/commentform.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/commentview.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/commentviewer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/likebutton.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/removebutton.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/replyform.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/replyviewer.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_comments_easy/settings.py" afterPath="$PROJECT_DIR$/django_comments_easy/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_commentseasy/admin.py" afterPath="$PROJECT_DIR$/django_commentseasy/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_commentseasy/forms.py" afterPath="$PROJECT_DIR$/django_commentseasy/forms.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_commentseasy/models.py" afterPath="$PROJECT_DIR$/django_commentseasy/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/commentform.html" afterPath="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/commentform.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/commentviewer.html" afterPath="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/commentviewer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/base.html" afterPath="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/check.html" afterPath="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/check.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/testuser.html" afterPath="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/testuser.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_commentseasy/templatetags/django_comments_easy.py" afterPath="$PROJECT_DIR$/django_commentseasy/templatetags/django_comments_easy.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_commentseasy/urls.py" afterPath="$PROJECT_DIR$/django_commentseasy/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_commentseasy/views.py" afterPath="$PROJECT_DIR$/django_commentseasy/views.py" />
     </list>
     <ignored path="django_comments_easy.iws" />
@@ -30,21 +63,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="commentviewer.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/commentviewer.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_commentseasy/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="60" column="93" selection-start-line="60" selection-start-column="93" selection-end-line="60" selection-end-column="93" />
+            <state relative-caret-position="274">
+              <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -52,14 +75,56 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="check.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/check.html">
+      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_commentseasy/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="34" />
+            <state relative-caret-position="68">
+              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#0#32#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_comments_easy/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2244">
+              <caret line="132" column="23" selection-start-line="132" selection-start-column="23" selection-end-line="132" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="apps.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_commentseasy/apps.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/django_commentseasy/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comment_form.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/comment_form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="99" selection-start-line="9" selection-start-column="99" selection-end-line="9" selection-end-column="99" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -74,61 +139,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="replyviewer.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/replyviewer.html">
+      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_commentseasy/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+            <state relative-caret-position="51">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/base.html">
+      <file leaf-file-name="comment_box.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/comment_box.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="django_comments_easy.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django_commentseasy/templatetags/django_comments_easy.py">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_commentseasy/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="commentform.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/commentform.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="74" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="commentview.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/commentview.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="replyform.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/replyform.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+            <state relative-caret-position="102">
+              <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -150,25 +185,32 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/django_comments_easy/settings.py" />
-        <option value="$PROJECT_DIR$/django_commentseasy/urls.py" />
-        <option value="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/base.html" />
-        <option value="$PROJECT_DIR$/django_commentseasy/forms.py" />
         <option value="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/commentbox.html" />
         <option value="$PROJECT_DIR$/django_comments_easy/urls.py" />
+        <option value="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/bootstrapfiles.html" />
         <option value="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/testuser.html" />
+        <option value="$PROJECT_DIR$/django_commentseasy/forms.py" />
         <option value="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/commentview.html" />
-        <option value="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/likebutton.html" />
-        <option value="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/removebutton.html" />
-        <option value="$PROJECT_DIR$/django_commentseasy/admin.py" />
-        <option value="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/commentform.html" />
-        <option value="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/replyform.html" />
-        <option value="$PROJECT_DIR$/django_commentseasy/models.py" />
-        <option value="$PROJECT_DIR$/django_commentseasy/views.py" />
-        <option value="$PROJECT_DIR$/django_commentseasy/templatetags/django_comments_easy.py" />
+        <option value="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/base.html" />
         <option value="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/commentviewer.html" />
+        <option value="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/replyform.html" />
         <option value="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/replyviewer.html" />
+        <option value="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/commentform.html" />
+        <option value="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/removebutton.html" />
+        <option value="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/likebutton.html" />
+        <option value="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/reply_viewer.html" />
+        <option value="$PROJECT_DIR$/django_commentseasy/urls.py" />
+        <option value="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/comment_viewer.html" />
+        <option value="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/like_button.html" />
+        <option value="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/comment_form.html" />
+        <option value="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/bootstrap_files.html" />
         <option value="$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/check.html" />
+        <option value="$PROJECT_DIR$/django_commentseasy/templatetags/django_comments_easy.py" />
+        <option value="$PROJECT_DIR$/django_commentseasy/admin.py" />
+        <option value="$PROJECT_DIR$/django_commentseasy/views.py" />
+        <option value="$PROJECT_DIR$/django_commentseasy/migrations/0001_initial.py" />
+        <option value="$PROJECT_DIR$/django_commentseasy/models.py" />
+        <option value="$PROJECT_DIR$/django_comments_easy/settings.py" />
       </list>
     </option>
   </component>
@@ -179,9 +221,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="width" value="1364" />
-    <option name="height" value="744" />
+    <option name="x" value="-7" />
+    <option name="width" value="1355" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -208,7 +250,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -291,30 +332,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="django_commentseasy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="django_comments_easy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="django_comments_easy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="django_comments_easy" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -599,26 +623,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1364" height="744" extended-state="0" />
+    <frame x="-7" y="0" width="1355" height="735" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24925816" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24047796" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32072368" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32554257" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32888147" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32888147" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="manage.py@django_comments_easy" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32888147" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="manage.py@django_comments_easy" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32888147" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -646,117 +670,20 @@
           <line>574</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/django_commentseasy/forms.py</url>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/django_commentseasy/admin.py</url>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/django_commentseasy/templatetags/django_comments_easy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/commentform.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/commentview.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_commentseasy/templatetags/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_commentseasy/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_comments_easy/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_commentseasy/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_commentseasy/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_commentseasy/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_commentseasy/templatetags/django_comments_easy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_commentseasy/templatetags/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/django_commentseasy/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -776,7 +703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -784,7 +710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1683">
           <caret line="99" column="6" selection-start-line="99" selection-start-column="6" selection-end-line="99" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -840,70 +765,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_commentseasy/migrations/0005_auto_20161104_2217.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_commentseasy/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/django_commentseasy/migrations/0005_auto_20161104_2217.py" />
     <entry file="file://$PROJECT_DIR$/django_commentseasy/templatetags/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_comments_easy/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_comments_easy/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_comments_easy/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_comments_easy/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_commentseasy/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -915,26 +784,205 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_commentseasy/apps.py">
+    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/commentview.html" />
+    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/bootstrapfiles.html" />
+    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/commentbox.html" />
+    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/removebutton.html" />
+    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/replyform.html" />
+    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/replyviewer.html" />
+    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/commentviewer.html" />
+    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/likebutton.html" />
+    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/commentform.html" />
+    <entry file="file://$PROJECT_DIR$/django_commentseasy/migrations/0024_auto_20161116_2241.py" />
+    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/check.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="153">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/reply_viewer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/reply_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/remove_button.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/like_button.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="32" column="98" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/comment_viewer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/bootstrap_files.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_commentseasy/templatetags/django_comments_easy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="77" column="3" selection-start-line="77" selection-start-column="3" selection-end-line="77" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_comments_easy/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_comments_easy/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="63" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_comments_easy/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_commentseasy/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-403">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_commentseasy/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_commentseasy/migrations/0002_auto_20161119_1309.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/django_commentseasy/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="17">
+          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_commentseasy/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_commentseasy/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_comments_easy/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2244">
+          <caret line="132" column="23" selection-start-line="132" selection-start-column="23" selection-end-line="132" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/comment_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="99" selection-start-line="9" selection-start-column="99" selection-end-line="9" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/testuser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/comment_box.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_commentseasy/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/django_commentseasy/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        <state relative-caret-position="102">
+          <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -947,120 +995,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/commentbox.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/removebutton.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/likebutton.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/django_commentseasy/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="62" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
+        <state relative-caret-position="223">
+          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/testuser.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_commentseasy/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="60" column="93" selection-start-line="60" selection-start-column="93" selection-end-line="60" selection-end-column="93" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_commentseasy/templatetags/django_comments_easy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/replyform.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/commentform.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="74" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/commentview.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/commentviewer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/replyviewer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_commentseasy/templates/django_commentseasy/check.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

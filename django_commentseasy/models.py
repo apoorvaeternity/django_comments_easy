@@ -3,21 +3,23 @@ from django.contrib.auth.models import User
 # Create your models here.
 
 
-class CommentsEasy(models.Model):
+class Comments(models.Model):
+
+    comment = models.TextField()
+    timestamp = models.DateTimeField(auto_now_add=True)
+    post_id = models.IntegerField()
+    total_likes = models.IntegerField(default=0)
+    author = models.ForeignKey(User, null=True)
+    parent_comment = models.ForeignKey("Comments", null=True)
+
     class Meta:
         ordering = ('timestamp',)
 
     def __str__(self):
         return str(self.id)
-    comment = models.TextField(max_length=500)
-    timestamp = models.DateTimeField(auto_now_add=True)
-    postid = models.IntegerField()
-    total_likes = models.IntegerField(default=0)
-    author = models.ForeignKey(User, default=0)
-    parentcomment = models.ForeignKey("CommentsEasy",null=True)
 
 
 class Likes(models.Model):
     user = models.ForeignKey(User, default=0)
-    comment = models.ForeignKey(CommentsEasy, default=0)
+    comment = models.ForeignKey("Comments", default=0)
     liked = models.IntegerField(default=0)

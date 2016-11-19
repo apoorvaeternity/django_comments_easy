@@ -1,19 +1,18 @@
 {% extends 'django_commentseasy/base.html' %}
 {% load bootstrap3 %}
-{% bootstrap_css %}
-{% bootstrap_javascript %}
-{% block content %}
+{% block comment_content %}
 
-    <form method="post" action="comment/django_commentseasy/commentform/" class="form" id="commentid_{{ postid }}">
-     {% csrf_token %}
+    <form method="post" action="{% url 'django_commentseasy:comment_form' %}" class="form"
+          id="comment_id_{{ post_id }}">
+        {% csrf_token %}
         {% bootstrap_form form %}
         {% buttons %}
-    <button type="submit" class="btn btn-primary" id="submit_button" value="{{ postid }}">
-      {% bootstrap_icon "chevron-right" %} Submit
-    </button>
-  {% endbuttons %}
-         <input type='hidden' name="postid" id="post_id" value="{{ postid }}" />
-        <input type='hidden' name="commenttype" id="post_id" value="parent" />
+            <button type="submit" class="btn btn-primary" id="submit_button" value="{{ post_id }}">
+                {% bootstrap_icon "chevron-right" %} Submit
+            </button>
+        {% endbuttons %}
+        <input type='hidden' name="post_id" id="post_id" value="{{ post_id }}"/>
+        <input type='hidden' name="comment_type" id="post_id" value="parent"/>
     </form>
 {% comment %}
     <script type="text/javascript">
@@ -25,7 +24,7 @@
             url:"django_commentseasy/commentform/",
             data:{comment:$("#id_comment").val(),
                 postid:$(this).val(),
-                csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val()
+                csrfmiddlewaretoken:$(this).parent().find('input[name=csrfmiddlewaretoken]').val()
                 },
             success:function(){
                     alert("Comment posted!!!");

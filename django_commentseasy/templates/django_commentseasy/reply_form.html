@@ -1,0 +1,18 @@
+{% extends 'django_commentseasy/base.html' %}
+{% load bootstrap3 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% block comment_content %}
+
+    <form method="post" action="{% url 'django_commentseasy:comment_form' %}" class="form">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        {% buttons %}
+            <button type="submit" class="btn btn-primary">
+                {% bootstrap_icon "chevron-right" %} Submit
+            </button>
+        {% endbuttons %}
+        <input type='hidden' name="comment_id" value="{{ comment_id }}"/>
+        <input type='hidden' name="comment_type" value="child"/>
+    </form>
+{% endblock %}
