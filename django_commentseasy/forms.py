@@ -11,4 +11,4 @@ class CommentForm(forms.ModelForm):
                                        "style": "resize:none;",
                                        "placeholder": "Write a comment...",
                                        "cols": "10",
-                                       "rows": "4"})}
+                                       "rows": "2"})}

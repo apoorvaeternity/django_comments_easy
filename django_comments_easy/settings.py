@@ -124,7 +124,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 LOGIN_URL = "http://www.google.com"
 
 # Static files (CSS, JavaScript, Images)

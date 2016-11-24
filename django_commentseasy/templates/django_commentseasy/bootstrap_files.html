@@ -2,3 +2,97 @@
 {% bootstrap_css %}
 {% bootstrap_javascript %}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).on("click","#like_button",function(e){
+        e.preventDefault();
+        $.ajax({
+            type:'POST',
+            async:true,
+            url:"{% url 'django_commentseasy:like_comment' %}",
+            data:{comment_id:$(this).val(),
+                csrfmiddlewaretoken:$(this).parent().find('input[name=csrfmiddlewaretoken]').val()
+                },
+            success:function(data){
+                  $("#comment_container").html(data);
+
+
+
+
+
+
+
+
+            }
+
+        });
+
+    });
+
+
+   $(document).on("click","#remove_button",function(e){
+        e.preventDefault();
+        $.ajax({
+            type:'POST',
+            async:true,
+            url:"{% url 'django_commentseasy:remove_comment' %}",
+            data:{comment_id:$(this).val(),
+                csrfmiddlewaretoken:$(this).parent().find('input[name=csrfmiddlewaretoken]').val()
+                },
+            success:function(data){
+
+                $("#comment_container").html( data );
+
+
+
+
+
+            }
+
+        });
+
+    });
+
+$(document).on("click","#submit_button",function(e){
+        e.preventDefault();
+            $.ajax({
+            type:'POST',
+            async:true,
+            url:"{% url 'django_commentseasy:comment_form' %}",
+            data:{comment:$(this).parent().parent().find('textarea[name=comment]').val(),
+                post_id:$(this).val(),
+                comment_type:$(this).parent().parent().find('input[name=comment_type]').val(),
+                csrfmiddlewaretoken:$(this).parent().parent().find('input[name=csrfmiddlewaretoken]').val()
+                },
+            success:function(data){
+                $( '#comment_container' ).html( data );
+
+            }
+
+        });
+
+    });
+$(document).on("click","#submit_button_reply",function(e){
+        e.preventDefault();
+        $.ajax({
+            type:'POST',
+            async:true,
+            url:"{% url 'django_commentseasy:comment_form' %}",
+            data:{
+                comment:$(this).parent().parent().find('textarea[name=comment]').val(),
+                comment_id:$(this).parent().parent().find('input[name=comment_id]').val(),
+                comment_type:$(this).parent().parent().find('input[name=comment_type]').val(),
+                csrfmiddlewaretoken:$(this).parent().parent().find('input[name=csrfmiddlewaretoken]').val()
+
+                },
+            success:function(data){
+                $( '#comment_container' ).html( data );
+
+            }
+
+        });
+
+    });
+
+
+
+</script>

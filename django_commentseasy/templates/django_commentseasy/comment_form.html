@@ -7,34 +7,15 @@
         {% csrf_token %}
         {% bootstrap_form form %}
         {% buttons %}
-            <button type="submit" class="btn btn-primary" id="submit_button" value="{{ post_id }}">
+            <button type="submit" class="btn btn-primary" id="submit_button" value={{ post_id }}>
                 {% bootstrap_icon "chevron-right" %} Submit
             </button>
         {% endbuttons %}
-        <input type='hidden' name="post_id" id="post_id" value="{{ post_id }}"/>
-        <input type='hidden' name="comment_type" id="post_id" value="parent"/>
+        <input type='hidden' name="post_id"  value={{ post_id }}>
+        <input type='hidden' name="comment_type"  value="parent">
     </form>
-{% comment %}
-    <script type="text/javascript">
-    $(document).on("click","#submit_button",function(e){
-        e.preventDefault();
-        $.ajax({
-            type:'POST',
-            async:false,
-            url:"django_commentseasy/commentform/",
-            data:{comment:$("#id_comment").val(),
-                postid:$(this).val(),
-                csrfmiddlewaretoken:$(this).parent().find('input[name=csrfmiddlewaretoken]').val()
-                },
-            success:function(){
-                    alert("Comment posted!!!");
 
-            }
 
-        });
 
-    });
-</script>
-{% endcomment %}
 {% endblock %}
 

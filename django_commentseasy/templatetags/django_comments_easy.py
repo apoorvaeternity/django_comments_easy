@@ -2,9 +2,12 @@ from django import template
 from django.template.loader import render_to_string
 from ..forms import CommentForm
 from ..models import Comments, Likes
+from django_commentseasy.templatetags import *
 
 
 register = template.Library()
+
+
 
 
 @register.simple_tag(name="bootstrap_files")
@@ -28,7 +31,7 @@ def render_reply_form(context, comment_id):
 
 @register.simple_tag(name="render_comment_list", takes_context=True)
 def render_comment_list(context, post_id):
-    comments = {'comments': Comments.objects.filter(post_id=post_id, parent_comment=None).order_by("-id")}
+    comments = {'comments': Comments.objects.filter(post_id=post_id, parent_comment=None).order_by("id")}
     request = context["request"]
     return render_to_string("django_commentseasy/comment_viewer.html", comments, request=request)
 
@@ -43,7 +46,8 @@ def render_reply_list(context, comment_id):
 @register.simple_tag(name="render_comment_box", takes_context=True)
 def render_comment_box(context, post_id):
     request = context["request"]
-    return render_to_string("django_commentseasy/comment_box.html", post_id, request=request)
+    post={'post_id':post_id}
+    return render_to_string("django_commentseasy/comment_box.html", post, request=request)
 
 
 @register.simple_tag(name="get_comment_count")
@@ -68,7 +72,7 @@ def get_comment_likes(comment_id):
 def render_like_button(context, comment_id):
     request = context["request"]
     if not request.user.is_authenticated():
-        state = 0
+        state = -1
     elif Likes.objects.filter(comment=comment_id, user=request.user).exists() is False:
         state = 0
     elif Likes.objects.get(comment=comment_id, user=request.user).liked == 0:

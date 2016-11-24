@@ -4,9 +4,13 @@
 
 {% block comment_content %}
 
-
-
 <div style="margin:0% 25% 0% 25%">
+{% render_comment_box 69 %}
+
+
+    </div>
+{% comment %}
+<div id="comment_container" style="margin:0% 25% 0% 25%">
 <div class="well well-sm">
 Total Comments-{% get_comment_count 69%}
 {% render_comment_list 69%}
@@ -14,6 +18,6 @@ Total Comments-{% get_comment_count 69%}
 </div>
 
 </div>
-
-
+{% endcomment %}
 {% endblock %}
+

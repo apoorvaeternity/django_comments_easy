@@ -11,8 +11,7 @@
                 <div class="media-body">
                     <h4 class="media-heading">
                     <span class="glyphicon glyphicon-user"></span>
-
-                        {% ifequal comment.author None %}
+                    {% ifequal comment.author None %}
                             {% with "Anonymous" as anon %}
                                 {{ anon }}
                             {% endwith %}
@@ -26,6 +25,7 @@
                 <th><span id="comment_likes_{{ comment.id }}" class="badge">Likes {% get_comment_likes comment.id %} </span></th>
                 {% render_like_button comment.id %}
                 {% render_remove_button comment.id %}
+
                 {% render_reply_list comment.id %}
                 {% render_reply_form comment.id %}
 

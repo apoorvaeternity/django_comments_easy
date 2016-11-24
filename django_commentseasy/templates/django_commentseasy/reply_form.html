@@ -8,11 +8,11 @@
         {% csrf_token %}
         {% bootstrap_form form %}
         {% buttons %}
-            <button type="submit" class="btn btn-primary">
+            <button type="submit" class="btn btn-primary" id="submit_button_reply" value={{ comment_id }}>
                 {% bootstrap_icon "chevron-right" %} Submit
             </button>
         {% endbuttons %}
-        <input type='hidden' name="comment_id" value="{{ comment_id }}"/>
-        <input type='hidden' name="comment_type" value="child"/>
+        <input type='hidden' name="comment_id" value={{ comment_id }}>
+        <input type='hidden' name="comment_type" value="child">
     </form>
 {% endblock %}

@@ -26,6 +26,7 @@
                 <th><span class="badge">Likes {% get_comment_likes comment.id %} </span></th>
                 {% render_like_button comment.id %}
                 {% render_remove_button comment.id %}
+
                 {% render_reply_list comment.id %}
                 {% render_reply_form comment.id %}
 
