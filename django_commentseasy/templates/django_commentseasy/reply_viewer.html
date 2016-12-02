@@ -19,7 +19,14 @@
                         {% endifequal %}
 
                         {{ comment.author.username }}
-                        <small><i>{{ comment.timestamp|naturaltime }}</i></small>
+                        <small><i>{{ comment.timestamp|naturaltime }} in reply to
+                            {% ifequal comment.parent_comment.author.username None %}
+                            {% with "Anonymous" as anon %}
+                                {{ anon }}
+                            {% endwith %}
+                        {% endifequal %}
+
+                            {{ comment.parent_comment.author.username}}</i></small>
                     </h4>
                     <p>{{ comment.comment }}</p>
                 </div>
@@ -28,11 +35,17 @@
                 {% render_remove_button comment.id %}
 
                 {% render_reply_list comment.id %}
-                {% render_reply_form comment.id %}
+<button type="button"  data-toggle="collapse" data-target="#reply_{{ comment.id }}">Reply</button>
+  <div id="reply_{{ comment.id }}" class="collapse">
+    {% render_reply_form comment.id %}
+  </div>
+
+
 
 
             </div>
         </div>
+
     {% endfor %}
 
 

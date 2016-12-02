@@ -10,13 +10,13 @@
 
     {% endifequal %}
     {% ifequal state 0 %}
-        <button type="submit" title="Like" id="like_button" value={{ comment }}>
+        <button type="submit"  class="like_button" value={{ comment }}>
    <span class="glyphicon glyphicon-thumbs-up"></span>
         </button>
 
     {% endifequal %}
     {% ifequal state 1 %}
-        <button type="submit" tiltle="Unlike" id="like_button" value={{ comment }}>
+        <button type="submit"  class="like_button" value={{ comment }}>
    <span class="glyphicon glyphicon-thumbs-down"></span>
 </button>
 

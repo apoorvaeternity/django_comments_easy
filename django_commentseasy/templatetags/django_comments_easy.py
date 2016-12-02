@@ -2,12 +2,9 @@ from django import template
 from django.template.loader import render_to_string
 from ..forms import CommentForm
 from ..models import Comments, Likes
-from django_commentseasy.templatetags import *
 
 
 register = template.Library()
-
-
 
 
 @register.simple_tag(name="bootstrap_files")
@@ -19,6 +16,13 @@ def bootstrap_files():
 def render_comment_form(context, post_id):
     request = context["request"]
     return render_to_string("django_commentseasy/comment_form.html", {"post_id": post_id, "form": CommentForm},
+                            request=request)
+
+
+@register.simple_tag(name="render_comment_data", takes_context=True)
+def render_comment_data(context, post_id):
+    request = context["request"]
+    return render_to_string("django_commentseasy/render_comment_data.html", {"post_id": post_id},
                             request=request)
 
 
@@ -46,7 +50,7 @@ def render_reply_list(context, comment_id):
 @register.simple_tag(name="render_comment_box", takes_context=True)
 def render_comment_box(context, post_id):
     request = context["request"]
-    post={'post_id':post_id}
+    post = {'post_id': post_id}
     return render_to_string("django_commentseasy/comment_box.html", post, request=request)
 
 

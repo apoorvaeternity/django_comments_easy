@@ -1,6 +1,4 @@
 {% load django_comments_easy %}
 <div id="comment_container" class="well well-sm">
-<span class="badge">Comments-{% get_comment_count post_id %}</span>
-{% render_comment_list post_id %}
-{% render_comment_form post_id %}
+    {% render_comment_data post_id %}
 </div>

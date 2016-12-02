@@ -20,6 +20,7 @@ class Comments(models.Model):
 
 
 class Likes(models.Model):
+
     user = models.ForeignKey(User, default=0)
     comment = models.ForeignKey("Comments", default=0)
     liked = models.IntegerField(default=0)

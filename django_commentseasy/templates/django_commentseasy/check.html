@@ -1,23 +1,20 @@
-
 {% load django_comments_easy %}
 {% bootstrap_files %}
 
 {% block comment_content %}
 
-<div style="margin:0% 25% 0% 25%">
-{% render_comment_box 69 %}
+    <div style="margin:0% 25% 0% 25%">
+    <img src="http://www.thisiscolossal.com/wp-content/uploads/2016/01/photo-1.jpg" style="width: 100%;">
+
+  <button type="button"  data-toggle="collapse" data-target="#comments">Show Comments</button>
+  <div id="comments" class="collapse">
+    {% render_comment_box 70 %}
+  </div>
+
+
+
 
 
     </div>
-{% comment %}
-<div id="comment_container" style="margin:0% 25% 0% 25%">
-<div class="well well-sm">
-Total Comments-{% get_comment_count 69%}
-{% render_comment_list 69%}
-{% render_comment_form 69%}
-</div>
-
-</div>
-{% endcomment %}
 {% endblock %}
 

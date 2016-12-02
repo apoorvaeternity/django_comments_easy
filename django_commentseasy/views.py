@@ -1,21 +1,19 @@
 from django.shortcuts import render
 from .forms import CommentForm
-from django.views import generic
-from django.http import HttpResponseRedirect,HttpResponse
+from django.views import generic, View
+from django.http import HttpResponseRedirect, HttpResponse
 from .models import Comments, Likes
-from django.contrib.auth.decorators import login_required
-from django.conf import settings
 from django.template.loader import render_to_string
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login
-from django.contrib import messages
 
 
 class Testuser(generic.View):
-    def get(self, request, *args, **kwargs):
+    @staticmethod
+    def get(request):
         return render(request, 'django_commentseasy/testuser.html')
 
-    def post(self, request, *args, **kwargs):
+    def post( request):
         user = User.objects.create_user(username=request.POST["user"],
                                         email=request.POST["email"],
                                         password=request.POST["pass"])
@@ -27,8 +25,7 @@ class Testuser(generic.View):
             login(request, user)
             return HttpResponseRedirect("http://www.google.com")
 
-        else:
-            # Return an 'invalid login' error message.
+        else:l
             return HttpResponseRedirect("http://www.google.com")
 
 
@@ -64,20 +61,16 @@ class CommentFormView(generic.edit.FormView):
                 new_comment.author = request.user
                 new_comment.parent_comment = Comments.objects.get(id=request.POST['comment_id'])
         else:
-            messages.error("Invalid comment.")
             return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
 
         ctx = {'post_id': new_comment.post_id}
         new_comment.save()
+        return HttpResponse(render_to_string("django_commentseasy/render_comment_data.html", ctx, request=request))
 
 
-        return HttpResponse(render_to_string("django_commentseasy/comment_box.html",ctx, request=request))
-
-
-class CommentOperations(generic.View):
-
-    @login_required(login_url=settings.LOGIN_URL)
-    def like_comment(request):
+class CommentLike(View):
+    @staticmethod
+    def post(request):
         ob = Comments.objects.get(pk=request.POST["comment_id"])
         if Likes.objects.filter(comment=request.POST["comment_id"], user=request.user).exists() is False:
             likes_ob = Likes.objects.create(comment=ob, user=request.user)
@@ -97,19 +90,16 @@ class CommentOperations(generic.View):
                 ob.total_likes += 1
                 ob.save()
                 likes_ob.save()
-        post={'post_id':Comments.objects.get(pk=request.POST["comment_id"]).post_id}
-        return HttpResponse(render_to_string("django_commentseasy/comment_box.html", post, request=request))
+        post = {'post_id': Comments.objects.get(pk=request.POST["comment_id"]).post_id}
+        return HttpResponse(render_to_string("django_commentseasy/render_comment_data.html", post, request=request))
 
 
-
-
-
-    @login_required(login_url=settings.LOGIN_URL)
-    def remove_comment(request):
-        post={}
+class CommentRemove(View):
+    @staticmethod
+    def post(request):
+        post = {}
         if Comments.objects.filter(id=request.POST["comment_id"], author=request.user).exists():
             ob = Comments.objects.get(id=request.POST["comment_id"], author=request.user)
             post = {'post_id': Comments.objects.get(pk=request.POST["comment_id"]).post_id}
             ob.delete()
-
-        return HttpResponse(render_to_string("django_commentseasy/comment_box.html", post, request=request))
+        return HttpResponse(render_to_string("django_commentseasy/render_comment_data.html", post, request=request))

@@ -7,7 +7,7 @@
     {% csrf_token %}
 
     {% if my_comment %}
-        <button type="submit" tiltle="Remove" id="remove_button" value={{ comment }}>
+        <button type="submit"  class="remove_button" value={{ comment }}>
    <span class="glyphicon glyphicon-trash"></span>
 </button>
 <input type="hidden" value={{ comment }} name="comment_id">

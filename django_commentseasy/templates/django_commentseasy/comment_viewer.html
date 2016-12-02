@@ -27,7 +27,10 @@
                 {% render_remove_button comment.id %}
 
                 {% render_reply_list comment.id %}
-                {% render_reply_form comment.id %}
+                <button type="button"  data-toggle="collapse" data-target="#reply_{{ comment.id }}">Reply</button>
+  <div id="reply_{{ comment.id }}" class="collapse">
+    {% render_reply_form comment.id %}
+  </div>
 
 
             </div>
